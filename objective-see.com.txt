@@ -1,0 +1,10 @@
+# TODO - can only grab title from main page, can only grab body from iframe
+#body: //body[contains(concat(' ',normalize-space(@class),' '), ' markdown-preview ')]
+#title: //div[contains(concat(' ',normalize-space(@class),' '), ' blogSubTitle ')]
+#date: //div[contains(concat(' ',normalize-space(@class),' '), ' blogDate ')]
+#body: //iframe
+
+title: //div[class='blogTitle']
+single_page_link: //iframe/@src
+
+test_url: https://objective-see.com/blog/blog_0x34.html
